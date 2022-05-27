@@ -61,7 +61,7 @@ describe('Desafios de manipulação de tabelas', () => {
       });
     });
 
-    describe("21 - Adicione com um único 'INSERT', duas linhas à tabela 'order_details' com os mesmos dados do requisito 20", () => {
+    describe.only("21 - Adicione com um único 'INSERT', duas linhas à tabela 'order_details' com os mesmos dados do requisito 20", () => {
       it('Verifica o desafio21', async () => {
         const challengeQuery = readFileSync('desafio21.sql', 'utf8').trim();
         const lastOrderDetailsId = (
